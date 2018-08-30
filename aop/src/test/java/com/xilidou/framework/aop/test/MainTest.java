@@ -1,15 +1,15 @@
 package com.xilidou.framework.aop.test;
 
-import com.xilidou.framework.aop.core.AopApplictionContext;
+import com.xilidou.framework.aop.core.AopApplicationContext;
 
 public class MainTest {
 
     public static void main(String[] args) throws Exception {
 
-        AopApplictionContext aopApplictionContext = new AopApplictionContext("application.json");
-        aopApplictionContext.init();
+        AopApplicationContext aopApplicationContext = new AopApplicationContext("application.json");
+        aopApplicationContext.init();
 
-        TestService testService = (TestService) aopApplictionContext.getBean("testServiceProxy");
+        TestService testService = (TestService) aopApplicationContext.getBean("testServiceProxy");
 
         testService.testMethod();
 

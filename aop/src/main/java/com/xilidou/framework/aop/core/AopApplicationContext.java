@@ -5,15 +5,14 @@ import com.xilidou.framework.aop.bean.AopBeanDefinition;
 import com.xilidou.framework.ioc.bean.BeanDefinition;
 import com.xilidou.framework.ioc.utils.ClassUtils;
 import com.xilidou.framework.ioc.utils.JsonUtils;
-
 import java.io.InputStream;
 import java.util.List;
 
-public class AopApplictionContext extends AopBeanFactoryImpl {
+public class AopApplicationContext extends AopBeanFactoryImpl {
 
     private String fileName;
 
-    public AopApplictionContext(String fileName) {
+    public AopApplicationContext(String fileName) {
         this.fileName = fileName;
     }
 
